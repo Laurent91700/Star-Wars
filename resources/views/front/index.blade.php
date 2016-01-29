@@ -8,5 +8,7 @@
                 @include('partials.listProduct')
             </div> {{--avant @empty container--}}
             {{--@endforeach--}}
-            {!! $products->links() !!}
+            {{--{!! $products->links() !!}--}}
+            <div id="loader"><img src="assets/img/ajax-loader.gif"></div>
+            <input type="text" readonly value="{{$products->currentPage()}}" id="currentpage">
 @stop

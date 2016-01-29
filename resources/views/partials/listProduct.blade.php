@@ -13,9 +13,9 @@
                 <p><b>{{trans('app.tag')}}</b>
                     @forelse($product->tags as $tag)
                         <a href="{{route('Tag',$tag->id)}}">{{$tag->name}}</a> -
-                @empty
-                    {{trans('app.noTag')}}
-                @endforelse
+                    @empty
+                        {{trans('app.noTag')}}
+                    @endforelse
                 <p>
                     <b>Published: </b> {{$product->published_at}}
                 </p>
@@ -27,7 +27,7 @@
         </article>
     </div>
 
-    @empty
-        <p>No product</p>
-    @endforelse
+@empty
+    <p>No product</p>
+@endforelse
 
