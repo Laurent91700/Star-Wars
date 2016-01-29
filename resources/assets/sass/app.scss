@@ -1,0 +1,67 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body{
+  color:black;
+  width: 100%;
+}
+
+.main, .connexion{
+  width: 544px;
+  margin: 0 auto;
+}
+
+article{
+  margin-top: 10px;
+}
+
+img{
+  padding-top: 20px;
+
+}
+.img_big{
+  width: 300px;
+}
+.img_small{
+  width: 150px;
+}
+.error{
+  color: red;
+}
+.nav img{
+  width: 40px;
+}
+
+footer{
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+.centre {
+  margin-left : 150px;
+  margin-right : auto;
+}
+
+.vignette{
+  width: 50px;
+}
+.panier{
+  padding-right: 20px;
+}
+
+.moins img, .plus img{
+  width: 20px;
+
+}
+.alert{
+  font-size: 16px;
+  font-weight: bold;
+}
+.alert.success{
+  color: green;
+}
+.alert.fail{
+  color: red;
+}
+.quantity{
+  width: 20px;
+
+}
