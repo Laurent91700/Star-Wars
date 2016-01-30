@@ -1,7 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-    <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -29,5 +28,4 @@
                 </div>
             </div>
         </div>
-    </main>
 @stop

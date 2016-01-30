@@ -1,23 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
-    {{--faire test avec {{route('storeContact')}} --}}
     <main class="main">
         @if(Session::has('message'))
             @include('partials.flash')
         @else
             <form method="POST" action="{{url('storeContact')}}">
                     {!! csrf_field() !!}
-                {{--@if (count($errors) > 0)--}}
-                    {{--<div class="alert alert-danger">--}}
-                        {{--<ul>--}}
-                            {{--@foreach ($errors->all() as $error)--}}
-                                {{--<li>{{ $error }}</li>--}}
-                            {{--@endforeach--}}
-                        {{--</ul>--}}
-                    {{--</div>--}}
-                {{--@endif--}}
-
                 <div class="form-group">
                     <label for="email">{{trans('app.emailAdress')}}</label>
                     <input class="form-control" id="email" name="email" type="email" value="{{old('email')}}">

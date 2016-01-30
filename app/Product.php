@@ -7,7 +7,7 @@ use Carbon\Carbon;
 
 class Product extends Model
 {
-    //
+
     protected $dates = ['published_at'];
     protected $fillable = ['name','content', 'abstract', 'price','category_id', 'quantity', 'status', 'published_at','slug'];
     public function category()
@@ -25,19 +25,15 @@ class Product extends Model
         return $this->hasOne('App\Picture');
     }
 
-    //requete personnalisé se préfixant par scope
-    // voir query builder dans la documentation
     public function scopeOnline($query)
     {
         return $query->where('status', '=', 'opened');
     }
 
-    public function getNameAttribute($value){ //appellé implicitement par
-        //rapport à son nom get"nomduchamp"Attribute
+    public function getNameAttribute($value){
         return ucfirst($value);
     }
-    public function getPublishedAtAttribute($value){ //appellé implicitement par
-        //rapport à son nom get"nomduchamp"Attribute
+    public function getPublishedAtAttribute($value){
         return Carbon::createFromFormat('Y-m-d H:i:s', $value)->format('d/m/Y');
     }
 

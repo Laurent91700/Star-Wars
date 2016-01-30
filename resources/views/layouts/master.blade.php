@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<header id="header" role="banner" class="line pam">
+<header id="header" role="banner">
     @include('partials.nav')
 </header>
 
@@ -24,9 +24,9 @@
 <div id="dialogQte" title="Quantité maximum en stock">
     <p>Le stock disponible est de <b>stock</b> article(s)</p>
 </div>
-<div id="main" role="main" class="line pam">
+<main role="main" class="modal-open">
     @yield('content','default value')
-</div>
+</main>
 <footer id="footer" role="contentinfo">
     @include('partials.footer')
 </footer>

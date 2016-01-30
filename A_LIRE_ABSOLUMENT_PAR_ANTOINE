@@ -1,0 +1,33 @@
+Framework:
+----------
+
+- Changement de KNACSS par bootstrap
+
+GULP:
+-----
+
+- SCript mis à jour pour la minification des jquery
+- Remplacement de la task knacss par bootstrap
+
+Point SH:
+---------
+
+-le fichier recréé la databse et réintégre le db_starwars.SQL pour alimentation
+-  NE PAS LANCER LES SEEDERS
+- le db_starwars.SQL est mis à la racine du projet
+
+Evolution:
+----------
+-Modification de la quantité au niveau du panier en tenant compte du stock
+-Quantité commandable via list-boxe tenant compte du stock
+- Rajout d'un champ Num_Cde dans la table history afin de regrouper les articles par numéro de commande
+- Rajout de la partie Register d'un users et dans la table Customer
+-utilisation de la phase de connexion au moment de passer la commande
+- Mise à jour du nbre de commande au moment que la comande est validé
+- Mise à jour de la dégrémentation du stock au moment de l'écriture des articles dans la table History
+
+Point supplémentaire:
+---------------------
+- Infiny Scroll
+
+

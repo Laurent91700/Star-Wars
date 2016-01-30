@@ -8,7 +8,7 @@
     <h1>{{trans('app.create')}}</h1>
     <form method="POST" action="{{url('product')}}" enctype="multipart/form-data">
     {!!csrf_field() !!}
-        <div class="container">
+        <div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="col-sm-6">

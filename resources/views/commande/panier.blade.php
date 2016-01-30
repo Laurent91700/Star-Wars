@@ -1,7 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-    <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -35,7 +34,7 @@
                                 </div>
                             </div>
                         @endforeach
-                        <p id="total">{{trans('App.total')}}{{$total}}</p>
+                        <p>{{trans('App.total')}}<b id="total">{{$total}}</b></p>
                         <a href="{{url('commande')}}">
                             <input type="button" value="Valider" class="btn btn-primary">
                         </a>
@@ -45,5 +44,4 @@
                 </div>
             </div>
         </div>
-    </main>
 @stop

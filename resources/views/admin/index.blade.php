@@ -38,12 +38,6 @@
                             @endforeach
                         </td>
                         <td>
-                            {{--<form action="{{url('product',$product->id)}}" Method="POST">--}}
-                                {{--{{ csrf_field() }}--}}
-{{--                                {{method_field('DELETE')}}--}}
-                                {{--<input type="hidden" name="_method" value="delete">--}}
-                                {{--<input type="submit" value="delete" class="confirmModal">--}}
-                            {{--</form>--}}
                             <a href="product/destroy/{{$product->id}}" class="confirmModal">
                                 <input type="button" class="btn btn-default" value="Delete">
                             </a>

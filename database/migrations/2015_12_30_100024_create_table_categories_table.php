@@ -16,7 +16,7 @@ class CreateTableCategoriesTable extends Migration
             $table->increments('id');
             $table->string('title',100);
             $table->text('description');
-            $table->timestamps(); // toujours garder le timestamp pour ELOQUENT
+            $table->timestamps();
         });
     }
 

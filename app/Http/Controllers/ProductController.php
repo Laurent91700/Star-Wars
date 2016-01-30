@@ -45,23 +45,20 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request->file('thumbnail'));
         $this->validate($request, [
             'name' => 'required',
             'price' => 'required|numeric',
             'quantity' => 'required|numeric',
             'published_at' => 'date_format:d/m/Y',
-            'thumbnail'     => 'image|max:3000', //300Mo
+            'thumbnail'     => 'image|max:3000',
             'tags[]'  => 'max:4'
         ]);
 
-//        dd($request->all());
         $products = Product::create($request->all());
         if (!empty($request->input('tags')))
-            $products->tags()->attach($request->tags); //equivalent à $request->input('tags')
+            $products->tags()->attach($request->tags);
 
         if(!is_null($request->file('thumbnail'))) {
-            //function test image
             Picture::createpicture($request, $products->id);
         }
 
@@ -110,16 +107,14 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'quantity' => 'required|numeric',
             'published_at' => 'date_format:d/m/Y',
-            'thumbnail'     => 'image|max:3000', //300Mo
+            'thumbnail'     => 'image|max:3000',
             'tags' => 'max:4'
         ]);
 
         $product = Product::find($id);
         if(!empty($request->input('tags')))
         {
-//            $product->tags()->detach();     detach les tags
-//            $product-tags()->attach($request->input('tags'));  attach les tags
-            $product->tags()->sync($request->input('tags')); // detach et attach
+            $product->tags()->sync($request->input('tags'));
         } else{
             $product->tags()->detach();
         }
@@ -136,7 +131,6 @@ class ProductController extends Controller
         if(!is_null($request->file('thumbnail'))) {
             Storage::delete($product->picture->uri);
             $product->picture->delete();
-            //function test image 2eme
             Picture::createpicture($request, $product->id);
         }
 
@@ -155,11 +149,10 @@ class ProductController extends Controller
         $picture = $product->picture;
         if(!is_null($picture))
         {
-            Storage::delete($picture->uri);// Storage de laravel voir config/filesystems.php
+            Storage::delete($picture->uri);
             $picture->delete();
         }
-        $product->delete(); // delete from products where id=11
-        //identique à Product::destroy($id);
+        $product->delete();
 
         return redirect('/product')->with(['message' => 'Product deleted','alert' => 'success']);
     }

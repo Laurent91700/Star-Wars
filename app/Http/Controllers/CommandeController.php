@@ -22,7 +22,6 @@ class CommandeController extends Controller
 
     public function __construct()
     {
-//        Session::forget('cde');
         view::composer('partials.nav', function($view){
             $categories = Category::all();
             $view->with(compact('categories'));
@@ -49,7 +48,6 @@ class CommandeController extends Controller
     }
 
     public function majqte(Request $request){
-//        return response()->json(['id' => $request->id , 'quantity' => $request->quantity]);
         if(Session::has('cde.prod'.$request->id))
         {
             $total = 0;
@@ -72,7 +70,6 @@ class CommandeController extends Controller
     public function showpanier(){
         $cde = array();
         $total = 0;
-//        Session::forget('cde');
         foreach(Session::get('cde') as $pdts ){
             foreach($pdts as $pdt) {
                 $product = Product::find($pdt['id']);

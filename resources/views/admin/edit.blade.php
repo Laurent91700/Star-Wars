@@ -8,7 +8,7 @@
         <form method="POST" action="{{url('product',$product->id)}}" enctype="multipart/form-data">
             {{csrf_field() }}
             {{method_field('PUT')}}
-            <div class="container">
+            <div>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="col-sm-6">
@@ -24,7 +24,7 @@
                             @if($errors->has('abstract'))<span class="error">{{$errors->first('abstract')}}</span><br>@endif
                             <div class="form-group">
                                 <label for="content" id="content">{{trans('app.content')}}</label>
-                                <input type="text" name="content" class="form-control" value="{{$product->content}}">
+                                 <textarea name="content" class="form-control" rows="5" cols="35">{{$product->content}}</textarea>
                             </div>
                             @if($errors->has('content'))<span class="error">{{$errors->first('content')}}</span><br>@endif
                             <div class="form-group">
@@ -73,7 +73,9 @@
                             <div class="form-group">
                                 <h2>{{trans('app.addImage')}}</h2>
                                 <input type="file" name="thumbnail" class=""><br>
-                                <img src="/uploads/{{$product->picture->uri}}" class="img_small" alt="photo du produit">
+                                @if(!is_null($product->picture))
+                                     <img src="/uploads/{{$product->picture->uri}}" class="img_small" alt="photo du produit">
+                                @endif
                                 @if($errors->has('thumbnail'))<span class="error">{{$errors->first('thumbnail')}}</span><br>@endif
                             </div>
                         </div>

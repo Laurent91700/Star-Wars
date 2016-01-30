@@ -19,7 +19,7 @@ class CreateHistoriesTable extends Migration
             $table->unsignedInteger('cde_id');
             $table->decimal('price',7,2);
             $table->smallInteger('quantity');
-            $table->timestamp('command_at'); //datetime
+            $table->timestamp('command_at');
             $table->enum('status',['finalized','unfinalized'])->default('unfinalized');
             $table->foreign('product_id')
                 ->references('id')
@@ -29,7 +29,7 @@ class CreateHistoriesTable extends Migration
                 ->references('id')
                 ->on('customers')
                 ->onDelete('CASCADE');
-            $table->timestamps(); //entity history create and update
+            $table->timestamps();
         });
     }
 

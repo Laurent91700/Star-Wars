@@ -2,33 +2,33 @@
 
 @section('content')
     <h1>Conditions Générales de Vente www.starwars.fr</h1>
-    <div class="container">
+    <div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <ol>
-                    <li>Art. 01 - Préambule</li>
-                    <li>Art. 02 - Produits</li>
-                    <li>Art. 03 - Les prix</li>
-                    <li>Art. 04 - La commande</li>
-                    <li>Art. 05 - Les modalités de paiement</li>
-                    <li>Art. 06 - La livraison</li>
-                    <li>Art. 07 - Droit de rétractation et échange</li>
-                    <li>Art. 08 - Les garanties</li>
-                    <li>Art. 09 - Environnement</li>
-                    <li>Art. 10 - Signature et preuves</li>
-                    <li>Art. 11 - Responsabilité</li>
-                    <li>Art. 12 - Propriété intellectuelle</li>
-                    <li>Art. 13 - Informations nominatives</li>
-                    <li>Art. 14 - Loi applicable et compétence juridictionelle</li>
+                    <li><a href="#art01">Art. 01 - Préambule</a></li>
+                    <li><a href="#art02">Art. 02 - Produits</a></li>
+                    <li><a href="#art03">Art. 03 - Les prix</a></li>
+                    <li><a href="#art04">Art. 04 - La commande</a></li>
+                    <li><a href="#art05">Art. 05 - Les modalités de paiement</a></li>
+                    <li><a href="#art06">Art. 06 - La livraison</a></li>
+                    <li><a href="#art07">Art. 07 - Droit de rétractation et échange</a></li>
+                    <li><a href="#art08">Art. 08 - Les garanties</a></li>
+                    <li><a href="#art09">Art. 09 - Environnement</a></li>
+                    <li><a href="#art10">Art. 10 - Signature et preuves</a></li>
+                    <li><a href="#art11">Art. 11 - Responsabilité</a></li>
+                    <li><a href="#art12">Art. 12 - Propriété intellectuelle</a></li>
+                    <li><a href="#art13">Art. 13 - Informations nominatives</a></li>
+                    <li><a href="#art14">Art. 14 - Loi applicable et compétence juridictionelle</a></li>
                 </ol>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <p>
                     Le présent site Internet www.starwars.fr (le "Site Internet") est édité par la société Star Wars, Société par Actions Simplifiée au capital de 353 490 250 Euros, dont le siège social est situé 57, rue de Blanchemaille, 59100 Roubaix, immatriculée au Registre du Commerce et des Sociétés de Lille-Métropole sous le numéro 477 180 186, et dont le numéro de TVA intracommunautaire est le FR 20 477 180 186 ("STAR WARS").
                     Téléphone : 0 892 350 350 (Service 0,35 € / min + prix appel)
                     Pour nous contacter par email (contact_serviceclients@satrwars.fr) : cliquez ici
                 </p>
-                <p>
+                <p id="art01"><a href="#">Haut</a>
                     01 - Préambule
 
                     Les présentes conditions générales de vente (les "Conditions Générales") sont conclues entre STAR WARS et toute personne physique non commerçante ("Vous") souhaitant effectuer un achat (hors produits vendus par le biais de la Marketplace) sur le Site Internet.
@@ -39,7 +39,7 @@
 
                     STAR WARS adhère au Code de Déontologie de la FEVAD (Fédération des Entreprises de Vente à Distance) et à la médiation de la FEVAD.
                 </p>
-                <p>
+                <p id="art02"><a href="#">Haut</a>
                     02 - Produits
 
                     Les produits régis par les présentes Conditions Générales sont ceux qui figurent sur le Site Internet et qui sont indiqués comme vendus et expédiés par STAR WARS (les "Produits"). Ils sont proposés dans la limite des stocks disponibles.
@@ -47,7 +47,7 @@
                     Les caractéristiques essentielles des Produits sont décrites et présentées avec la plus grande exactitude possible.
                     [Retour en haut de page]
                 </p>
-                <p>
+                <p id="art03"><a href="#">Haut</a>
                     03 - Les prix
 
                     Les prix des Produits sont indiqués en Euros toutes taxes comprises. Ils tiennent compte de la TVA et des éventuelles réductions applicables au jour de la commande.
@@ -57,7 +57,7 @@
                     Toutefois, un prix ne pourra pas être modifié une fois votre commande validée.
                     [Retour en haut de page]
                 </p>
-                <p>
+                <p id="art04"><a href="#">Haut</a>
                     04 - La commande
 
                     4.1 Identification préalable
@@ -85,7 +85,7 @@
                     Pour toute question relative au suivi d'une commande, vous pouvez consulter votre compte sur le Site Internet ou appeler le 09 69 32 35 15 (coût d'un appel local) 7 jours/7 de 8h à 20h.
                     [Retour en haut de page]
                 </p>
-                <p>
+                <p id="art05"><a href="#">Haut</a>
                     05 - Les modalités de paiement
 
                     Vous pouvez régler votre commande :
@@ -99,7 +99,7 @@
 
                     Si vous faites l'objet d'un agrément "Client confiance", vous devrez payer les Produits commandés une fois par mois à réception de votre relevé mensuel.
                 </p>
-                <p>
+                <p id="art06"><a href="#">Haut</a>
                     06 - La livraison
 
                     6.1. Livraison en France continentale, Corse et Monaco
@@ -139,7 +139,7 @@
 
 
                 </p>
-                <p>
+                <p id="art07"><a href="#">Haut</a>
                     07 - Droit de rétractation et échange
 
                     7.1. Droit de rétractation et modalités de retour
@@ -174,7 +174,7 @@
                     Pour rappel, les frais de port retour sont gratuits par Relais Colis ou en reprise à domicile pour les produits volumineux, à l'exception des retours par La Poste qui restent à votre charge.
                     Pour les Produits volumineux signalés par une camionnette, star wars organisera gratuitement leur reprise à domicile, si vous en faites la demande au 09 69 32 35 15 (coût d'un appel local). Le Produit à reprendre doit être intact, complet, emballé et le cas échéant, débranché. La reprise du Produit pourra éventuellement se faire en même temps que la livraison du nouveau Produit, sous réserve de l'organisation des transporteurs et de la disponibilité du Produit.
                 </p>
-                <p>
+                <p id="art08"><a href="#">Haut</a>
                     08 - Garanties
                     8.1. Garanties Légales
 
@@ -209,7 +209,7 @@
                     8.2.2 Certains Produits peuvent également bénéficier d’une garantie commerciale dite « Garantie Fabricant » à laquelle star wars n’est pas partie. star wars ne saurait donc être tenue pour responsable en cas de refus du fabricant d’appliquer sa garantie.
                     L’étendue et la durée de cette garantie varie selon les fabricants. Vous pouvez consulter les termes exacts des garanties sur le site Internet du fabricant et dans la notice du Produit.
                 </p>
-                <p>
+                <p id="art09"><a href="#">Haut</a>
                     09 - Environnement
 
                     Appareils électriques et électroniques :
@@ -220,7 +220,7 @@
                     - par courrier : star wars, Centre de contact Technique, 57 rue de Blanchemaille, BP 567, 59060 Roubaix Cedex1
                     - par le biais de la rubrique Questions Fréquentes sur www.starwars.fr
                 </p>
-                <p>
+                <p id="art10"><a href="#">Haut</a>
                     10 - Preuves
 
                     Dans tous les cas, la fourniture en ligne du numéro de carte bancaire et la validation finale de la commande vaudront preuve de l'intégralité de ladite commande conformément à l'article 1316 – 1 du Code Civil et vaudront exigibilité des sommes engagées par la saisie des Produits figurant sur le bon de commande.
@@ -233,7 +233,7 @@
 
                     L'archivage des bons de commande et des factures est effectué sur un support fiable et durable de manière à correspondre à une copie fidèle et durable conformément à l'article 1348 du Code Civil.
                 </p>
-                <p>
+                <p id="art11"><a href="#">Haut</a>
                     11 - Responsabilités
 
                     star wars a pour toutes les étapes de prise de commande ainsi que pour les étapes postérieures à la conclusion du contrat une obligation de résultat.
@@ -243,7 +243,7 @@
                     Le logo TRIMAN est issu d’une nouvelle règlementation du code de l’environnement. Le logo signifie que le produit recyclable est soumis à une consigne de tri. Cela indique simplement que le produit est à mettre dans un container de recyclage. Il va être apposé sur l’ensemble des produits de consommation qui sont collectés par des éco-organismes et dont la « recyclabilité » est assurée. Pour star wars, nos catalogues papiers, nos prospectus commerciaux ainsi que nos équipements d’ameublements, nos textiles et nos chaussures sont concernés. Ils doivent donc être triés par vos soins. Le Triman peut figurer sur les produits ou sur l’emballage, la notice ou tout autre support y compris dématérialisé. Les piles, accumulateurs usagés, déchets d’équipements électriques et électroniques, déchets ménagers des produits chimiques qui disposent de leur propre signalétique et ne sont donc pas concernés.
 
                 </p>
-                <p>
+                <p id="art12"><a href="#">Haut</a>
                     12 - Propriété intellectuelle
 
                     Tous les éléments du Site Internet, qu'ils soient visuels ou sonores, y compris la technologie sous-jacente, sont protégés par le droit d'auteur, des marques ou des brevets. De même, les marques, logos, dessins et modèles figurant sur le Site Internet sont la propriété exclusive de star wars. Leur divulgation ne saurait en aucun cas être interprétée comme accordant une licence ou un droit d'utilisation quelconque des dites marques et éléments distinctifs protégés par le droit d'auteur. Ils ne peuvent donc être utilisés sous peine de contrefaçon.
@@ -257,12 +257,12 @@
                     En revanche, tout lien hypertexte renvoyant au Site Internet et utilisant la technique du framing ou du in-line linking est formellement interdit. Dans tous les cas, tout lien, devra être retiré sur simple demande de star wars
 
                 </p>
-                <p>
+                <p id="art13"><a href="#">Haut</a>
                     13 - Informations nominatives
 
                     Lors de votre commande, les données nominatives collectées feront l'objet d'un traitement informatique. Vous êtes invité à vous reporter à l'onglet "Données Personnelles" du Site Internet pour obtenir toutes les informations relatives à ce point.
                 </p>
-                <p>
+                <p id="art14"><a href="#">Haut</a>
                     14 - Loi applicable et compétences juridictionelle
 
                     Les Conditions Générales sont soumises à la loi française. Le tribunal compétent en cas de litige sera celui du lieu de domicile du défendeur ou, au choix du demandeur, du lieu de livraison effective du Produit.

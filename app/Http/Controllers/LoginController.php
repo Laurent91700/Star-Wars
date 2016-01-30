@@ -14,7 +14,6 @@ class LoginController extends Controller
 {
     public function __construct()
     {
-        //le master est alimenté pour toutes les pages avec cette version
         view::composer('partials.nav', function($view){
             $categories = Category::all();
             $view->with(compact('categories'));
@@ -86,8 +85,6 @@ class LoginController extends Controller
             'password_confirmation' => 'required'
         ]);
         $parameters = $request->except(['password_confirmation','_token']);
-//        User::create($parameters);
-//        var_dump($parameters);
         $u = new user;
         $u->name    = $parameters['name'];
         $u->email    = $parameters['email'];

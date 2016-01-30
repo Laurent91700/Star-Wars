@@ -1,18 +1,15 @@
 @extends('layouts.master')
 
 @section('content')
-    {{--        @foreach($products as $product)--}}
     @forelse($products as $product)
-        <div class="container">
+        <div>
             <div class="row">
                 <article>
                     <div class="col-sm-6">
                         @if(!is_null($product->picture))
-                            <img class=" img_big " src="{{url('uploads',$product->picture->uri)}}">
+                            <img class=" img_small" src="{{url('uploads',$product->picture->uri)}}">
                         @endif
                     </div>
-                    {{--comment--}}
-
                     <div class="col-sm-6">
                         <h2><a href="{{route('Product',[$product->id,$product->slug])}}">{{$product->name}}</a></h2>
                         <p><b>Description:</b>{{$product->abstract}}</p>
@@ -36,7 +33,4 @@
     @empty
         <p>No product</p>
     @endforelse
-    {{--@endforeach--}}
-
-{{--    {!! $products->links() !!}--}}
 @stop

@@ -4,19 +4,22 @@ body{
   color:black;
   width: 100%;
 }
-
-.main, .connexion{
-  width: 544px;
+a:link{
+  text-decoration: none;
+}
+main, .connexion{
+  width: 800px;
   margin: 0 auto;
 }
-
+.row {
+  margin: auto;
+}
 article{
   margin-top: 10px;
 }
 
 img{
   padding-top: 20px;
-
 }
 .img_big{
   width: 300px;
@@ -24,36 +27,52 @@ img{
 .img_small{
   width: 150px;
 }
-.error{
-  color: red;
-}
 .nav img{
   width: 40px;
 }
+header .nav li{
+  font-size: 16px;
+  margin-right: 40px;
+  padding-top: 30px;
+}
+
+footer .nav li{
+  margin-left: 230px;
+}
+
 
 footer{
   margin-top: 70px;
   margin-bottom: 0px;
 }
 .centre {
-  margin-left : 150px;
+  margin-left : 100px;
   margin-right : auto;
 }
 
 .vignette{
   width: 50px;
 }
-.panier{
-  padding-right: 20px;
+.moyenne{
+  width: 100px;
 }
+ .logo{
+   width: 300px;
+   padding-left: 25px;
+ }
 
 .moins img, .plus img{
   width: 20px;
-
 }
+
+.error{
+  color: red;
+}
+
 .alert{
   font-size: 16px;
   font-weight: bold;
+  color: blue;
 }
 .alert.success{
   color: green;
@@ -63,5 +82,5 @@ footer{
 }
 .quantity{
   width: 20px;
-
 }
+

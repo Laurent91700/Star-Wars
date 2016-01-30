@@ -15,22 +15,25 @@
         Etes-vous sûr de vouloir supprimer cet élément ?
     </p>
 </div>
-<header id="header" role="banner" class="line pam">
-    <div class="navbar navbar-default">
-        <nav id="navigation" role="navigation">
-            <ul class="nav navbar-nav center">
+<div id="dialogQte" title="Quantité maximum en stock">
+    <p>Le stock disponible est de <b>stock</b> article(s)</p>
+</div>
+<header id="header" role="banner">
+    <nav class="navbar navbar-default"  id="navigation" role="navigation">
+        <img src="{{url('assets/img/','star-wars-banner.png')}}" class="pull-left logo" alt="icone du logo star wars">
+            <ul class="nav navbar-nav navbar-static-top centre">
                 <li><a href="{{route('FrontController')}}">Site public</a></li>
                 <li><a href="{{url('product')}}">Dashboard</a></li>
                 <li><a href="{{route('history')}}">History</a></li>
                 <li><a href="{{route('logout')}}">Logout</a></li>
             </ul>
-        </nav>
-    </div>
+    </nav>
 </header>
-<div id="main" role="main" class="line pam">
+
+<main role="main" class="modal-open">
     @yield('content','default value')
-</div>
-<footer id="footer" role="contentinfo" class="line pam txtcenter">
+</main>
+<footer id="footer" role="contentinfo">
     @include('partials.footer')
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
