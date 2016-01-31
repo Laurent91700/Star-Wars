@@ -100,7 +100,7 @@ Route::group(['middleware' => ['web']], function() {
 
     });
     Route::group(['middleware' => 'auth'], function(){
-        Route::post('/registerCustomer',
+        Route::any('/registerCustomer',
             ['as' => 'registerCustomer',
             'uses' => 'LoginController@registerCustomer'
             ]);

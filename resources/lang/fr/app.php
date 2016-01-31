@@ -7,7 +7,7 @@ return[
     'quantity' => 'Quantité: ',
     'emailAdress' => 'Adresse email: ',
     'contactSuccess' => 'Votre message a été envoyé avec succès',
-    'login' => 'Login: ',
+    'login' => 'Veuillez vous connecter ',
     'password'  => 'Mot de passe: ',
     'register' => 's\'enregistrer',
     'noAuth'    => 'Vous n\'etes pas autoriser !! ',

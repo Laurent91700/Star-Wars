@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="connexion">
+        <h3>
+            Informations de Livraison et mode de paiement
+        </h3>
         <form method="POST" action="{{route('saveCustomer')}}">
             {!! csrf_field() !!}
 

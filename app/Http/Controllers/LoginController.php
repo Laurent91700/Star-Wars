@@ -9,6 +9,8 @@ use App\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use View;
+use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -61,7 +63,7 @@ class LoginController extends Controller
     public function saveCustomer(Request $request){
         $this->validate($request,[
             'address' => 'required|max:200',
-            'number_card' => 'required|numeric',
+            'number_card' => 'required|numeric|digits:16',
         ]);
         $c = new Customer();
         $c->user_id = Auth::user()->id;
